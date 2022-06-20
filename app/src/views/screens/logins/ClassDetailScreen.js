@@ -115,9 +115,11 @@ function ClassDetailScreen({route, navigation}) {
           setdisable(0);
           if(response[0].message=='already_applied') {
             alert('You have already applied for this job');
+            navigation.navigate('MyTabs');
           }
           else {
             alert('You have successfully applied for this job');
+            navigation.navigate('MyTabs');
           }
         
         })
